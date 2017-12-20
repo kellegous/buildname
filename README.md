@@ -22,5 +22,5 @@ import "github.com/kellegous/buildname"
 ...
 
 name := buildname.FromVersion("e6a92ec2fe5fba022c31c32c97ea455cee4b2736")
-fmt.Printf("name: %s\n", name) // 
+fmt.Printf("name: %s\n", name) // Clever Turn
 ```
