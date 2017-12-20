@@ -12,6 +12,7 @@ func hash(b []byte) uint64 {
 	return h.Sum64()
 }
 
+// FromVersion generates a build name from a given version string.
 func FromVersion(version string) string {
 	na := uint64(len(adjectives))
 	nn := uint64(len(nouns))
