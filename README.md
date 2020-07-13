@@ -10,11 +10,13 @@ For most programs, server and cli, that I create these days, I tend to use linke
 
 You can see this naming scheme in most of my projects. https://kellegous.com/version.
 
-## installation
+## Use as a library
+
+### installation
 
 `go get -u github.com/kellegous/buildname`
 
-## Quick Start
+### Quick Start
 
 ```go
 import "github.com/kellegous/buildname"
@@ -23,4 +25,17 @@ import "github.com/kellegous/buildname"
 
 name := buildname.FromVersion("e6a92ec2fe5fba022c31c32c97ea455cee4b2736")
 fmt.Printf("name: %s\n", name) // Clever Turn
+```
+
+## Use as a command line too.
+
+### Installation
+
+`go get -u github.com/kellegous/buildname/cmd/buildname`
+
+### Quit Start
+
+```
+$ buildname f18d9a1e16a1eb3dd79ac02271528c7275fa1119
+Blue-Eyed Country
 ```
